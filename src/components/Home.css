@@ -1,0 +1,57 @@
+/* src/components/Module.css */
+
+:root {
+    --primary-color: #3b82f6;
+    --secondary-color: #06b6d4;
+    --background-color: #f8fafc;
+    --text-color: #1f2937;
+    --table-bg-color: #ffffff;
+    --icon-completed-color: #10b981; /* Green color */
+    --icon-not-completed-color: #ef4444; /* Red color */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.module-table {
+    background-color: var(--table-bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.module-table th {
+    background: var(--primary-color);
+    color: white;
+}
+
+.module-table tbody tr:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.icon-completed {
+    color: var(--icon-completed-color);
+}
+
+.icon-not-completed {
+    color: var(--icon-not-completed-color);
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+}

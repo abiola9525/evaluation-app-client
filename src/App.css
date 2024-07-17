@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+

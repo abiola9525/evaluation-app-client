@@ -1,0 +1,71 @@
+
+
+.module-review-form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control-custom {
+    margin-bottom: 15px;
+}
+
+.btn-custom {
+    margin-top: 20px;
+}
+
+/* Additional styles for specific form controls */
+
+.form-group {
+    margin-bottom: 20px; /* Adjust vertical spacing between form groups */
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+textarea.form-control-custom {
+    resize: vertical; /* Allow vertical resizing of textareas */
+}
+
+/* Styling for individual form controls */
+
+#moduleDetails,
+#academicYear,
+#studentNAP,
+#evolutionToTeaching,
+#pastChanges,
+#futureChanges {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#moduleDetails:focus,
+#academicYear:focus,
+#studentNAP:focus,
+#evolutionToTeaching:focus,
+#pastChanges:focus,
+#futureChanges:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+    .module-review-form-container {
+        padding: 15px;
+    }
+    .btn-custom {
+        margin-top: 15px;
+    }
+}
