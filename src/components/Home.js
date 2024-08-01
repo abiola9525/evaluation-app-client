@@ -50,6 +50,8 @@ const Module = () => {
                                 <th>Completed By</th>
                                 <th>Completed</th>
                                 <th>Action</th>
+                                <th>Previous Review</th>
+                               
                             </tr>
                         </thead>
                         <tbody>
@@ -75,6 +77,16 @@ const Module = () => {
                                             <FaEdit className="mr-2" /> Review
                                         </Button>
                                     </td>
+                                    <td>
+                                        <Button
+                                            variant="primary"
+                                            onClick={() => handleRowClick(module.module_code)}
+                                            className="d-flex align-items-center"
+                                        >
+                                            <FaEdit className="mr-2" /> View Previous Review
+                                        </Button>
+                                    </td>
+                                    
                                 </tr>
                             ))}
                         </tbody>

@@ -119,11 +119,11 @@ const ModuleReviewForm = () => {
                 </Form.Group>
 
                 <Form.Group controlId="evolutionOfOpModule">
-                    <Form.Label>Evolution of the operation of the module</Form.Label>
+                    <Form.Label>Evaluation of the operation of the module</Form.Label>
                     <Form.Control
                         as="textarea"
                         name="evolution_of_op_module"
-                        placeholder="Enter evolution of the operation of the module"
+                        placeholder="Enter evaluation of the operation of the module"
                         value={formData.evolution_of_op_module}
                         onChange={handleChange}
                         rows={4}
@@ -132,11 +132,11 @@ const ModuleReviewForm = () => {
                 </Form.Group>
 
                 <Form.Group controlId="evolutionToTeaching">
-                    <Form.Label>Evolution of approach to teaching, assessment and feedback</Form.Label>
+                    <Form.Label>Evaluation of approach to teaching, assessment and feedback</Form.Label>
                     <Form.Control
                         as="textarea"
                         name="evolution_to_teaching"
-                        placeholder="Enter evolution to teaching"
+                        placeholder="Enter evaluation to teaching"
                         value={formData.evolution_to_teaching}
                         onChange={handleChange}
                         rows={4}
