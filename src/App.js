@@ -9,6 +9,7 @@ import Register from './components/Register';
 import Profile from './components/Profile';
 import ModuleReviewForm from './components/ModuleReviewForm';
 import ProgramReviewForm from './components/ProgramReviewForm'; 
+import PreviousReview from './components/PreviousReview';
 import NavbarComponent from './components/Navbar';
 import axiosInstance from './axiosConfig';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -60,6 +61,7 @@ const App = () => {
                 {!isAuthenticated && <Route path="/login" element={<Login onLogin={handleLogin} />} />}
                 {!isAuthenticated && <Route path="/register" element={<Register />} />}
                 {isAuthenticated && <Route path="/profile" element={<Profile user={user} />} />}
+                <Route path="/module/:moduleCode/previous-review" element={<PreviousReview />} />
                 <Route path="/module/:moduleCode/review/add" element={<ModuleReviewForm />} />
             </Routes>
         </Router>

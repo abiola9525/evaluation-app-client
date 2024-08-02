@@ -31,6 +31,10 @@ const Module = () => {
     const handleRowClick = (moduleCode) => {
         navigate(`/module/${moduleCode}/review/add`);
     };
+    
+    // const handleViewPreviousReview = (moduleCode) => {
+    //     navigate(`/module/${moduleCode}/previous-review`);
+    // };
 
     return (
         <Container className="mt-5">
@@ -50,7 +54,7 @@ const Module = () => {
                                 <th>Completed By</th>
                                 <th>Completed</th>
                                 <th>Action</th>
-                                <th>Previous Review</th>
+                                {/* <th>Previous Review</th> */}
                                
                             </tr>
                         </thead>
@@ -77,15 +81,15 @@ const Module = () => {
                                             <FaEdit className="mr-2" /> Review
                                         </Button>
                                     </td>
-                                    <td>
+                                    {/* <td>
                                         <Button
-                                            variant="primary"
-                                            onClick={() => handleRowClick(module.module_code)}
+                                            variant="info"
+                                            onClick={() => handleViewPreviousReview(module.module_code)}
                                             className="d-flex align-items-center"
                                         >
                                             <FaEdit className="mr-2" /> View Previous Review
                                         </Button>
-                                    </td>
+                                    </td> */}
                                     
                                 </tr>
                             ))}

@@ -1,0 +1,63 @@
+/* PreviousReview.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.page-wrapper {
+    background-color: #f2f2f2;
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+
+.wrapper--w790 {
+    max-width: 790px;
+    margin: auto;
+}
+
+.module-details-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.module-details-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.module-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.module-details-table th, .module-details-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.module-details-table th {
+    background-color: #f8f8f8;
+}
+
+.btn--radius-2 {
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn--blue {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn--blue:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
