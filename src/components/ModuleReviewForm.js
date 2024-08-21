@@ -39,11 +39,19 @@ const ModuleReviewForm = () => {
     }, []);
 
     const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-        });
-    };
+    const selectedYearId = e.target.value;
+    const selectedYear = academicYears.find(year => year.id === parseInt(selectedYearId));
+
+    if (selectedYear && selectedYear.status_message !== "") {
+        toast.error("Academic year is not accepting reviews");
+        return; // Prevent form submission or further processing
+    }
+
+    setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+    });
+};
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -86,8 +94,11 @@ const ModuleReviewForm = () => {
                     >
                         <option value="">Select academic year</option>
                         {academicYears.map((academic_year) => (
-                            <option key={academic_year.id} value={academic_year.id}>
-                                {academic_year.academic_year}
+                            <option
+                                key={academic_year.id}
+                                value={academic_year.id}
+                            >
+                                {academic_year.academic_year} {academic_year.status_message}
                             </option>
                         ))}
                     </Form.Control>
